@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tic_Tac_Toe</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="switch-button.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+    <div class="container">
+        <h1 style="text-align: center"> TIC_TAC_TOE </h1>
+        <h2 type = "number" style="text-align: center" id="turn"> 0 </h2>
+        <div class="switch-checkbox">
+            <label for="delete-from-history">delete from history</label>
+            <input type = "checkbox" id = "delete-from-history" class="checkbox">
+        </div>
+        <div class="switch-checkbox">
+            <label for="board-size">board size:</label>
+            <input type = "number" id = "board-size" class="number-input" value=3 max="10" min="2">
+        </div>
+        <div class="switch-checkbox">
+            <label for="success-number">success number:</label>
+            <input type = "number" id = "success-number" class="number-input" value=3 max="10" min="2">
+        </div>
+    </div>
+        <div class="board" id="board"> </div>
+        <div class="space"></div>
+        <div class="board" id="success-board"> </div>
+        <script>init()</script> 
+    </body>
+
+</html>

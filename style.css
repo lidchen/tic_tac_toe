@@ -1,0 +1,71 @@
+body {
+    background-color: #494949;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-input {
+    background-color: transparent;
+    max-width: 40px;
+    border: none;
+    color: white;
+}
+
+.board {
+    max-width: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1px;
+}
+
+.space {
+    margin: 20px;
+}
+
+.square {
+    border: 1px solid rgb(125, 124, 124);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: antiquewhite;
+    transition-duration: 0.1s;
+}
+
+.square:hover {
+    cursor: pointer;
+    border: 2px solid rgb(163, 163, 163);
+    background-color: rgb(215, 208, 199)
+}
+
+.square:focus {
+    cursor: pointer;
+    border: 2px solid rgb(163, 163, 163);
+    background-color: rgb(215, 208, 199)
+}
+
+.square:active {
+    cursor: pointer;
+    border: 2px solid rgb(189, 189, 189);
+    background-color: rgb(234, 228, 220)
+}
+
+.dot-x {
+    width: 90%;
+    background-color: black;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.dot-o {
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border-radius: 50%;
+}
