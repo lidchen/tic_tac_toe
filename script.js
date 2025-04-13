@@ -179,38 +179,3 @@ function successCheck(row, col) {
 
     return 0;
 }
-
-
-// UNDONE
-// function successCheck(row, col) {
-//     let success;
-
-//     // row
-//     success = 0;
-//     for (let i = 0; i < boardSize; i++) {
-//         for (let j = 0; j < boardSize; j++) {
-//             success += elements[i][j];
-//             if (success >= successNum || success <= -successNum) {
-//                 return 1;
-//             }
-//             console.log(success);
-//         }
-//         success = 0;
-//     }
-
-//     // col
-//     success = 0;
-//     for (let j = 0; j < boardSize; j++) {
-//         for (let i = 0; i < boardSize; i++) {
-//             success += elements[i][j];
-//             if (success >= successNum || success <= -successNum) {
-//                 return 1;
-//             }
-//             console.log(success);
-//         }
-//         success = 0;
-//     }
-//     return 0;
-
-//     // diagonal
-// }
